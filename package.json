@@ -13,7 +13,9 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.listSymbols"
+		"onCommand:extension.listSymbols",
+		"onCommand:extension.listSymbolsSimple",
+		"onCommand:extension.listSymbolsSimpleClassOnly"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -21,6 +23,14 @@
 			{
 				"command": "extension.listSymbols",
 				"title": "List Symbols"
+			},
+			{
+				"command": "extension.listSymbolsSimple",
+				"title": "List Symbols Simple"
+			},
+			{
+				"command": "extension.listSymbolsSimpleClassOnly",
+				"title": "List Symbols Simple Class Only"
 			}
 		]
 	},
